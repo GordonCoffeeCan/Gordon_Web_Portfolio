@@ -43,14 +43,14 @@ header{
 #nameTitle h4{
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
-	margin-top: -5px;
+	margin-top: -6px;
 	font-size: 12px;
 }
 /*--- Header --- end ---*/
 
 /*--- Navigation ---*/
 nav{
-	padding: 30px 25px 0 0; 
+	padding: 30px 18px 0 0;
 	float: right;
 }
 
@@ -62,13 +62,24 @@ nav ul{
 
 nav li{
 	display:inline;
-	margin: 0 0 0 10px;
 }
 
-nav li a{
+.navItem{
 	text-decoration:none;
+	color: #BBB; 
+	padding: 0 16px 0 10px;
+	border-right-style:solid;
+	border-right-width: thin;
 }
 
+#aboutMe{
+	padding-right: 0;
+	border-right-style: none;
+}
+
+.navItem:hover{
+	color: #3A3A3A;
+}
 
 #menu_icon img{
 	display: none;
@@ -132,9 +143,9 @@ footer h4{
 	
 	#menu_icon img{
 		display: block;
-		width: 40px;
-		height: 40px;
-		margin-top: -3px;
+		width: 50px;
+		height: 50px;
+		margin-top: -10px;
 	}
 	
 	#navMenu{
@@ -143,11 +154,14 @@ footer h4{
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 66px;
+		top: 70px;
 		background: #FFFFFF;
+		border: #000000;
+		border-style: solid;
+		border-width: thin;
 		opacity: 0.9;
 		width: 95%;
-		height: 100vh;
+		height: auto;
 	}
 	
 	#navMenu li{
@@ -163,20 +177,25 @@ footer h4{
 		display: inline-block;
 		width: 100%;
 		text-align: center;
-		margin: 60px auto;
+		margin: 36px auto 56px 0;
 	}
 	
 	#navMenu a{
 		display: inline-block;
 		width: 100%;
 		text-align: center;
-		margin: 15px auto;
+		margin: 12px auto;
+		padding-left: 0;
+	}
+	
+	.featureHolder{
+		margin-top: -20px;
 	}
 	
 	.features{
-		margin-top: -50px;
 		float: left;
 		width: 100%;
+		margin-bottom: 28px;
 	}
 	
 	.features img{

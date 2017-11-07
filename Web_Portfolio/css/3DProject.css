@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--- Feature ---*/
+.ProjectHolder{
+	max-width: 1200px;
+	margin: 30px auto 0 auto;
+}
+
+.Project{
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.Project i{
+	padding: 13% 0 4% 0;
+}
+
+.Project img{
+	max-width: 85%;
+	width: auto;
+	height: auto;
+}
+/*--- Feature --- end ---*/
+
+/*--- Start Responsive ---*/
+@media screen and (max-width: 768px){
+	.ProjectHolder{
+		margin-top: -20px;
+	}
+	
+	.Project{
+		float: left;
+		width: 100%;
+	}
+	
+	.Project img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.Project i{
+		font-size: 350%;
+		padding: 4% 0 1% 0;
+	}
+}
+/*--- Start Responsive --- end ---*/
