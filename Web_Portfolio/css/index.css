@@ -1,17 +1,33 @@
 @charset "utf-8";
 /* CSS Document */
 
-#header{
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	margin: 0;
+}
+
+/*--- Header ---*/
+
+header{
 	/*background:#979797;*/
-	width: 1200px;
-	height: 150px;
-	margin: auto;
+	width: 100%;
+	height: 120px;
+	margin: 30px auto 10px auto;
+}
+
+#headerContentHolder{
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #nameTitle{
 	color: #3A3A3A;
-	padding-top: 20px;
-	width: 30%;
+	padding: 20px 0 0 25px;
 	float: left;
 }
 
@@ -27,71 +43,147 @@
 #nameTitle h4{
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
-	margin-top: -20px;
+	margin-top: -5px;
 	font-size: 12px;
 }
+/*--- Header --- end ---*/
 
-#navigation{
-	padding-top: 36px;
-	width: 70%;
-	float: left;
+/*--- Navigation ---*/
+nav{
+	padding: 30px 25px 0 0; 
+	float: right;
 }
 
-#navigation ul{
+nav ul{
+	font-size: 14px;
 	text-align: right;
 	font-family: 'Open Sans', sans-serif;
 	
 }
 
-#navigation li{
+nav li{
 	display:inline;
-	margin: 0 0 0 50px;
+	margin: 0 0 0 10px;
 }
 
-#navigation li a{
+nav li a{
 	text-decoration:none;
 }
 
-#features{
-	width: 1200px;
-	height: 400px;
-	margin: 20px auto auto auto;
+#menue_icon{
+	padding: 30px 25px 0 0; 
+	float: right;
 }
 
-#features div{
+#menue_icon img{
+	display: none;
+	width: 50px;
+	height: 50px;
+}
+
+/*--- Navigation --- end ---*/
+
+/*--- Feature ---*/
+.featureHolder{
+	max-width: 1200px;
+	margin: 30px auto 0 auto;
+}
+
+.features{
 	width: 33.33%;
-	height: 100%;
 	float: left;
-}
-
-#features div a{
-	width: 384px;
-	height: 360px;
-	float: left;
-}
-
-#feature_0{
-	margin-right: 4%;
-}
-
-#feature_1{
-	margin-left: 2%;
-}
-
-#feature_2{
-	margin-left: 4%;
-}
-
-#footer{
-	/*background: #606060;*/
-	width: 1200px;
-	height: 100px;
-	margin: auto;
 	text-align: center;
 }
 
-#footer h4{
+.features i{
+	padding: 13% 0 4% 0;
+}
+
+.features img{
+	max-width: 95%;
+	width: auto;
+	height: auto;
+}
+
+/*--- Feature --- end ---*/
+
+/*--- Footer ---*/
+footer{
+	/*background: #606060;*/
+	width: 100%;
+	height: 30px;
+	float: left;
+	margin-top: 85px;
+	text-align: center;
+}
+
+footer h4{
 	color: #333333;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 }
+/*--- Footer --- end ---*/
+
+/*--- Start Responsive ---*/
+@media screen and (max-width: 768px){
+	header{
+		margin: auto;
+	}
+	#nameTitle h1{
+		font-size: 200%;
+	}
+	
+	#nameTitle h4{
+		font-size: 90%;
+	}
+	
+	#menue_icon img{
+		display: inline-block;
+	}
+	
+	nav{
+		float: left;
+	}
+	
+	nav ul{
+		/*display: none;*/
+		z-index: 1000;
+		position: absolute;
+		padding: 20px;
+		background: #6991AC;
+		right: 16px;
+		top: 100px;
+		width: 100%;
+	}
+	
+	nav:hover ul{
+		display: block;
+	}
+	
+	nav li{
+		text-align: center;
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+	}
+	
+	.features{
+		float: left;
+		width: 100%;
+	}
+	
+	.features img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.features i{
+		font-size: 350%;
+		padding: 4% 0 1% 0;
+	}
+	
+	footer{
+		margin: 30px auto 30px auto;
+	}
+}
+/*--- Start Responsive --- end ---*/
