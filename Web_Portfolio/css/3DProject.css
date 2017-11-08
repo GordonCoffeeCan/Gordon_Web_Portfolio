@@ -28,7 +28,7 @@
 /*--- Start Responsive ---*/
 @media screen and (max-width: 768px){
 	.ProjectHolder{
-		margin-top: -20px;
+		margin-top: 20px;
 	}
 	
 	.Project{
@@ -37,6 +37,7 @@
 	}
 	
 	.Project img{
+		max-width: 95%;
 		width: 100%;
 		height: auto;
 	}
