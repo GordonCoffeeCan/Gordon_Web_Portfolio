@@ -53,12 +53,13 @@ header{
 	margin: auto;
 	padding-bottom: 12px;
 	max-width: 1180px;
-	border-bottom: #3A3A3A;
+	border-bottom: #BBB;
 	border-bottom-style: solid;
 	border-width: thin;
 	width: 98%;
 }
 .pageTitle h2{
+	color: #BBB;
 	padding-left: 10px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
