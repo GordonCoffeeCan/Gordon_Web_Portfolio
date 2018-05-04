@@ -8,26 +8,19 @@
 }
 
 .paragraphSpace{
-	text-align: center;
-	font-size: 575%;
-	color: #4A4444;
-	text-transform: uppercase;
-	letter-spacing: 1%;
-	margin: 15% 0;
+	margin: 15% auto;
 }
 
-h2{
-	text-align: center;
-	font-size: 275%;
-	color: #E5E5E5;
-	text-transform: uppercase;
-	letter-spacing: 1%;
+.paragraphSpace div{
+	margin: 0 auto;
 }
 
 /*--- Start Parallax here-----*/
 
 .parallax{
-	background:  url("http://www.w3newbie.com/wp-content/uploads/parallax-2.jpg") repeat fixed 100%;
+	background: url(Images/Gordon.jpg) no-repeat fixed;
+	background-size: cover;
+	background-position: center;
 }
 
 .parallax2{
