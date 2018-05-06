@@ -1,4 +1,3 @@
-// JavaScript Document
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function initPage1() {
 	canvas = document.getElementById("canvas");

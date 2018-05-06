@@ -52,7 +52,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#333333").ss(1,1,1).p("EhOHAAAMCcPAAA");
+	this.shape.graphics.f().s("#333333").ss(0.1,1,1).p("EhOHAAAMCcPAAA");
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -355,21 +355,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,187.2,196);
 	this.LowerText_mc.parent = this;
 	this.LowerText_mc.setTransform(95.5,28,1,1,0,0,0,95.5,23.2);
 
-	this.LowerText_mc_1 = new lib._3dartist_mc();
-	this.LowerText_mc_1.parent = this;
-	this.LowerText_mc_1.setTransform(95.5,28,1,1,0,0,0,95.5,23.2);
-
-	this.LowerText_mc_2 = new lib._3dartist_mc();
-	this.LowerText_mc_2.parent = this;
-	this.LowerText_mc_2.setTransform(95.5,28,1,1,0,0,0,95.5,23.2);
-
 	this.instance_3 = new lib.StageSpliteLine_mc();
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(0,0.1,1,1,0,0,0,0,0.1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.LowerText_mc_2},{t:this.LowerText_mc_1},{t:this.LowerText_mc}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.LowerText_mc}]}).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.Page_1_mc, new cjs.Rectangle(-500.5,-200,1001,336.5), null);
+}).prototype = getMCSymbolPrototype(lib.Page_1_mc, new cjs.Rectangle(-500,-200,1000.1,336.5), null);
 
 
 // stage content:
@@ -384,7 +376,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,187.2,196);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(499.5,233.5,1001,336.5);
+p.nominalBounds = new cjs.Rectangle(500,233.5,1000.1,336.5);
 // library properties:
 lib.properties = {
 	width: 1000,
@@ -393,7 +385,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Page_2_atlas_.png?1525409098770", id:"Page_2_atlas_"}
+		{src:"images/Page_2_atlas_.png?1525572109358", id:"Page_2_atlas_"}
 	],
 	preloads: []
 };

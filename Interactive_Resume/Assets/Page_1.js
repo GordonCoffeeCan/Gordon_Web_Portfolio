@@ -1,70 +1,9 @@
 (function (lib, img, cjs, ss, an) {
 
 var p; // shortcut to reference prototypes
-lib.webFontTxtInst = {}; 
-var loadedTypekitCount = 0;
-var loadedGoogleCount = 0;
-var gFontsUpdateCacheList = [];
-var tFontsUpdateCacheList = [];
 lib.ssMetadata = [];
 
 
-
-lib.updateListCache = function (cacheList) {		
-	for(var i = 0; i < cacheList.length; i++) {		
-		if(cacheList[i].cacheCanvas)		
-			cacheList[i].updateCache();		
-	}		
-};		
-
-lib.addElementsToCache = function (textInst, cacheList) {		
-	var cur = textInst;		
-	while(cur != exportRoot) {		
-		if(cacheList.indexOf(cur) != -1)		
-			break;		
-		cur = cur.parent;		
-	}		
-	if(cur != exportRoot) {		
-		var cur2 = textInst;		
-		var index = cacheList.indexOf(cur);		
-		while(cur2 != cur) {		
-			cacheList.splice(index, 0, cur2);		
-			cur2 = cur2.parent;		
-			index++;		
-		}		
-	}		
-	else {		
-		cur = textInst;		
-		while(cur != exportRoot) {		
-			cacheList.push(cur);		
-			cur = cur.parent;		
-		}		
-	}		
-};		
-
-lib.gfontAvailable = function(family, totalGoogleCount) {		
-	lib.properties.webfonts[family] = true;		
-	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
-	for(var f = 0; f < txtInst.length; ++f)		
-		lib.addElementsToCache(txtInst[f], gFontsUpdateCacheList);		
-
-	loadedGoogleCount++;		
-	if(loadedGoogleCount == totalGoogleCount) {		
-		lib.updateListCache(gFontsUpdateCacheList);		
-	}		
-};		
-
-lib.tfontAvailable = function(family, totalTypekitCount) {		
-	lib.properties.webfonts[family] = true;		
-	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
-	for(var f = 0; f < txtInst.length; ++f)		
-		lib.addElementsToCache(txtInst[f], tFontsUpdateCacheList);		
-
-	loadedTypekitCount++;		
-	if(loadedTypekitCount == totalTypekitCount) {		
-		lib.updateListCache(tFontsUpdateCacheList);		
-	}		
-};
 // symbols:
 // helper functions:
 
@@ -90,7 +29,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#333333").ss(1,1,1).p("EhOHAAAMCcPAAA");
+	this.shape.graphics.f().s("#333333").ss(0.1,1,1).p("EhOHAAAMCcPAAA");
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -200,7 +139,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regY:0,scaleX:0.22,y:0,alpha:0.172},0).wait(1).to({scaleX:0.27,alpha:0.245},0).wait(1).to({scaleX:0.31,alpha:0.3},0).wait(1).to({scaleX:0.34,alpha:0.347},0).wait(1).to({scaleX:0.37,alpha:0.388},0).wait(1).to({scaleX:0.4,alpha:0.425},0).wait(1).to({scaleX:0.42,alpha:0.459},0).wait(1).to({scaleX:0.44,alpha:0.491},0).wait(1).to({scaleX:0.46,alpha:0.52},0).wait(1).to({scaleX:0.48,alpha:0.548},0).wait(1).to({scaleX:0.5,alpha:0.574},0).wait(1).to({scaleX:0.52,alpha:0.599},0).wait(1).to({scaleX:0.54,alpha:0.623},0).wait(1).to({scaleX:0.55,alpha:0.646},0).wait(1).to({scaleX:0.57,alpha:0.667},0).wait(1).to({scaleX:0.58,alpha:0.688},0).wait(1).to({scaleX:0.6,alpha:0.708},0).wait(1).to({scaleX:0.61,alpha:0.727},0).wait(1).to({scaleX:0.62,alpha:0.746},0).wait(1).to({scaleX:0.63,alpha:0.764},0).wait(1).to({scaleX:0.65,alpha:0.781},0).wait(1).to({scaleX:0.66,alpha:0.797},0).wait(1).to({scaleX:0.67,alpha:0.813},0).wait(1).to({scaleX:0.68,alpha:0.828},0).wait(1).to({scaleX:0.69,alpha:0.843},0).wait(1).to({scaleX:0.7,alpha:0.857},0).wait(1).to({scaleX:0.71,alpha:0.87},0).wait(1).to({scaleX:0.72,alpha:0.883},0).wait(1).to({scaleX:0.73,alpha:0.895},0).wait(1).to({scaleX:0.74,alpha:0.907},0).wait(1).to({scaleX:0.74,alpha:0.918},0).wait(1).to({scaleX:0.75,alpha:0.929},0).wait(1).to({scaleX:0.76,alpha:0.939},0).wait(1).to({scaleX:0.76,alpha:0.948},0).wait(1).to({scaleX:0.77,alpha:0.957},0).wait(1).to({scaleX:0.78,alpha:0.965},0).wait(1).to({scaleX:0.78,alpha:0.972},0).wait(1).to({scaleX:0.79,alpha:0.979},0).wait(1).to({scaleX:0.79,alpha:0.985},0).wait(1).to({scaleX:0.79,alpha:0.99},0).wait(1).to({scaleX:0.8,alpha:0.994},0).wait(1).to({scaleX:0.8,alpha:0.997},0).wait(1).to({scaleX:0.8,alpha:0.999},0).wait(1).to({regY:0.1,scaleX:0.8,y:0.1,alpha:1},0).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-50,-0.5,100.1,1);
+p.nominalBounds = new cjs.Rectangle(-50,0,100,0.1);
 
 
 // stage content:
@@ -210,20 +149,19 @@ p.nominalBounds = new cjs.Rectangle(-50,-0.5,100.1,1);
 	// layer 1
 	this.instance = new lib.Page_0_mc();
 	this.instance.parent = this;
-	this.instance.setTransform(500,100);
+	this.instance.setTransform(500,69.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(950,199.5,100.1,1);
+p.nominalBounds = new cjs.Rectangle(950,139,100,0.1);
 // library properties:
 lib.properties = {
 	width: 1000,
-	height: 200,
+	height: 139,
 	fps: 60,
 	color: "#FFFFFF",
 	opacity: 1.00,
-	webfonts: {},
 	manifest: [],
 	preloads: []
 };

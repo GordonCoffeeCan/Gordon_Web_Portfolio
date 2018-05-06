@@ -22,24 +22,24 @@
   }
 </style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="Page_2.js?1525409098788"></script>
+<script src="Page_2.js?1525572109378"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-function initPage2() {
-	canvas = document.getElementById("canvas_Page2");
-	anim_container = document.getElementById("animation_container_Page2");
-	dom_overlay_container = document.getElementById("dom_overlay_container_Page2");
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
 	images = images||{};
 	ss = ss||{};
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", handleFileLoad);
-	loader.addEventListener("complete", handleCompletePage2);
+	loader.addEventListener("complete", handleComplete);
 	loader.loadManifest(lib_page2.properties.manifest);
 }
 function handleFileLoad(evt) {	
 	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }	
 }
-function handleCompletePage2(evt) {
+function handleComplete(evt) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	var queue = evt.target;
 	var ssMetadata = lib_page2.ssMetadata;

@@ -7,21 +7,24 @@
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="Assets/Page_1.js"></script>
 <script src="Assets/Page_2.js"></script>
+<script src="Assets/Page_3.js"></script>
+<script src="Assets/Page_4.js"></script>
 <script src="Assets/Page_1_Animation.js"></script>
 <script src="Assets/Page_2_Animation.js"></script>
+<script src="Assets/Page_3_Animation.js"></script>
+<script src="Assets/Page_4_Animation.js"></script>
 <title>Gordon Lee</title>
 </head>
 
-<body onload="initPage1(); initPage2();">
+<body onload="initPage1(); initPage2(); initPage3(); initPage4();">
 
-<section class="paragraphSpace" >
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:200px">
-		<canvas id="canvas" width="1000" height="200" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1000px; height:200px; position: absolute; left: 0px; top: 0px; display: block;">
+<section class="titlePage" >
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:380px">
+		<canvas id="canvas" width="1000" height="380" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1000px; height:380px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </section>
-
 
 <section class="parallax">
 	<div class="parallax-inner">
@@ -38,13 +41,27 @@
 
 <section class="parallax2">
 	<div class="parallax-inner">
-		<h2>Space2</h2>
 	</div>
 </section>
 
 <section class="paragraphSpace">
-	<div>
-		<h1>Space1</h1>
+	<div id="animation_container_Page3" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:525px">
+		<canvas id="canvas_Page3" width="1000" height="525" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container_Page3" style="pointer-events:none; overflow:hidden; width:1000px; height:525px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</section>
+
+<section class="parallax3">
+	<div class="parallax-inner">
+	</div>
+</section>
+
+<section class="paragraphSpace">
+	<div id="animation_container_Page4" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:525px">
+		<canvas id="canvas_Page4" width="1000" height="525" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container_Page4" style="pointer-events:none; overflow:hidden; width:1000px; height:525px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
 	</div>
 </section>
 
