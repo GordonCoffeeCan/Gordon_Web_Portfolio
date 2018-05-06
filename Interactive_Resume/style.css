@@ -18,7 +18,7 @@
 }
 
 .paragraphSpace{
-	margin: 15% auto;
+	margin: 10% auto;
 }
 
 .paragraphSpace div{
@@ -39,15 +39,9 @@
 	background-position:  center;
 }
 
-.parallax3{
-	background:  url(Images/Beijing.jpg) fixed no-repeat;
-	background-size: cover;
-	background-position:  center;
-}
-
 .parallax-inner{
-	padding-top: 25%;
-	padding-bottom: 25%;
+	padding-top: 20%;
+	padding-bottom: 20%;
 }
 
 /*--- End Parallax here-----*/
