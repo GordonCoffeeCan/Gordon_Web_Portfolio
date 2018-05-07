@@ -6,28 +6,29 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="Assets/Page_1.js"></script>
-<script src="Assets/Page_2.js"></script>
-<script src="Assets/Page_3.js"></script>
-<script src="Assets/Page_4.js"></script>
-<script src="Assets/Page_1_Animation.js"></script>
-<script src="Assets/Page_2_Animation.js"></script>
-<script src="Assets/Page_3_Animation.js"></script>
-<script src="Assets/Page_4_Animation.js"></script>
+<script src="Scripts/Page_1.js"></script>
+<script src="Scripts/Page_2.js"></script>
+<script src="Scripts/Page_3.js"></script>
+<script src="Scripts/Page_4.js"></script>
+<script src="Scripts/Page_5.js"></script>
+<script src="Scripts/Page_1_Animation.js"></script>
+<script src="Scripts/Page_2_Animation.js"></script>
+<script src="Scripts/Page_3_Animation.js"></script>
+<script src="Scripts/Page_4_Animation.js"></script>
+<script src="Scripts/Page_5_Animation.js"></script>
 <title>Gordon Lee</title>
 </head>
 
-<body onload="initPage1(); initPage2(); initPage3(); initPage4();">
+<body onload="initPage1(); initPage2(); initPage3(); initPage4(); initPage5();">
 
-<section class="titlePage" >
+<section class="titlePage">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:380px">
 		<canvas id="canvas" width="1000" height="380" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1000px; height:380px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </section>
-
-<section class="parallax">
+<section id="parallax_1">
 	<div class="parallax-inner">
 	</div>
 </section>
@@ -40,50 +41,50 @@
 	</div>
 </section>
 
-<section class="parallax2">
+<section id="parallax_2">
 	<div class="parallax-inner">
 	</div>
 </section>
 
 <section class="paragraphSpace" id="page3">
-	<div id="animation_container_Page3" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:525px">
-		<canvas id="canvas_Page3" width="1000" height="525" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container_Page3" style="pointer-events:none; overflow:hidden; width:1000px; height:525px; position: absolute; left: 0px; top: 0px; display: block;">
+	<div id="animation_container_Page3" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:540px">
+		<canvas id="canvas_Page3" width="1000" height="540" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container_Page3" style="pointer-events:none; overflow:hidden; width:1000px; height:540px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 	<div class="sectionContent">
-		<p>In 2009, I studied at Raffles Colldege of Design and Commerce for undergraudate degree, major in Interactive Design.</p>
+		<p>In 2012, I graduated at Raffles Colldege of Design and Commerce Beijing, undergraudate degree, major in Interactive Design.</p>
 	</div>
 	<div class="spliteLine"></div>
 </section>
 
 <section class="paragraphSpace">
 	<div>
-		<section class="features" id="feature_0">
+		<section class="features">
 			<td>
 				<i>
-					<a href="#"><img src="images/WebDesign_Icon.png"></a>
+					<a href="#"><img src="Images/WebDesign_Icon.png"></a>
 				</i>
 			</td>
 		</section>
-		<section class="features" id="feature_1">
+		<section class="features">
 			<td>
 				<i>
-					<a href="#"><img src="images/GraphicDesign_icon.png"></a>
+					<a href="#"><img src="Images/GraphicDesign_icon.png"></a>
 				</i>
 			</td>
 		</section>
-		<section class="features" id="feature_2">
+		<section class="features">
 			<td>
 				<i>
-					<a href="#"><img src="images/MVAnimation_Icon.png"></a>
+					<a href="#"><img src="Images/MVAnimation_Icon.png"></a>
 				</i>
 			</td>
 		</section>
-		<section class="features" id="feature_3">
+		<section class="features">
 			<td>
 				<i>
-					<a href="#"><img src="images/InstallationDesign_icon.png"></a>
+					<a href="#"><img src="Images/InstallationDesign_icon.png"></a>
 				</i>
 			</td>
 		</section>
@@ -95,15 +96,91 @@
 </section>
 
 <section class="paragraphSpace" id="page4">
-	<div id="animation_container_Page4" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:310px">
-		<canvas id="canvas_Page4" width="1000" height="310" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container_Page4" style="pointer-events:none; overflow:hidden; width:1000px; height:310px; position: absolute; left: 0px; top: 0px; display: block;">
+	<div id="animation_container_Page4" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:300px">
+		<canvas id="canvas_Page4" width="1000" height="300" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container_Page4" style="pointer-events:none; overflow:hidden; width:1000px; height:300px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 	<div class="sectionContent">
-		<p>Some Text Here.</p>
+		<p>After I graduated from the colledge, I had worked as a frelance Web Designer for about 1 year. Designed and Developed the webstie, for a faashion design studio MPMP.me, with HTML, CSS and JavaSript.</p>
 	</div>
 	<div class="spliteLine"></div>
 </section>
+<section id="parallax_3">
+	<div class="parallax-inner">
+	</div>
+</section>
+<section class="paragraphSpace" id="page5">
+	<div id="animation_container_Page5" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:360px">
+		<canvas id="canvas_Page5" width="1000" height="360" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container_Page5" style="pointer-events:none; overflow:hidden; width:1000px; height:360px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+	<div class="sectionContent">
+		<p>In 2013, I started working at <i>Ogilvy &amp Mather</i> as a Flash Designer.</p>
+	</div>
+</section>
+
+<section class="paragraphSpace">
+	<div>
+		<section class="features">
+			<td>
+				<i>
+					<a href="#"><img src="Images/Audi_Icon.png"></a>
+				</i>
+			</td>
+		</section>
+		<section class="features">
+			<td>
+				<i>
+					<a href="#"><img src="Images/Beetle_Icon.png"></a>
+				</i>
+			</td>
+		</section>
+		<section class="features">
+			<td>
+				<i>
+					<a href="#"><img src="Images/Benz_Icon.png"></a>
+				</i>
+			</td>
+		</section>
+		<section class="features">
+			<td>
+				<i>
+					<a href="#"><img src="Images/Lenovo_Icon.png"></a>
+				</i>
+			</td>
+		</section>
+	</div>
+	<div class="sectionContent">
+		<p>Responsible for Flash Website designing and developing by using Flash and coded with ActionScript3, and making animated Banners, for vairous world-wide brands, etc. <i>Volkswagen</i>, <i>Benz</i>, <i>Audi</i>.</p>
+	</div>
+	<div>
+		<section class="features">
+			<td>
+				<i>
+					<a href="#"><img src="Images/Audi_Icon.png"></a>
+				</i>
+			</td>
+		</section>
+		<section class="features">
+			<td>
+				<i>
+					<a href="#"><img src="Images/Beetle_Icon.png"></a>
+				</i>
+			</td>
+		</section>
+	</div>
+	<div class="sectionContent">
+		<p>and also China local brands, etc. <i>L4enovo</i>, <i>Huawei</i>.</p>
+	</div>
+	<div class="spliteLine"></div>
+</section>
+
+<section id="parallax_4">
+	<div class="parallax-inner">
+	</div>
+</section>
+
 </body>
 </html>

@@ -22,11 +22,11 @@
   }
 </style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="Page_3.js"></script>
+<script src="Page_3.js?1525719681988"></script>
 <script>
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+var canvas3, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function initPage3() {
-	canvas = document.getElementById("canvas_Page3");
+	canvas3 = document.getElementById("canvas_Page3");
 	anim_container = document.getElementById("animation_container_Page3");
 	dom_overlay_container = document.getElementById("dom_overlay_container_Page3");
 	images = images||{};
@@ -47,7 +47,7 @@ function handleComplete(evt) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
 	exportRoot = new lib_page3.InteractiveResume();
-	stage = new createjs.Stage(canvas);
+	stage = new createjs.Stage(canvas3);
 	stage.addChild(exportRoot);	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
@@ -94,9 +94,9 @@ function handleComplete(evt) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container_Page3" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:525px">
-		<canvas id="canvas_Page3" width="1000" height="525" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container_Page3" style="pointer-events:none; overflow:hidden; width:1000px; height:525px; position: absolute; left: 0px; top: 0px; display: block;">
+	<div id="animation_container_Page3" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:540px">
+		<canvas id="canvas_Page3" width="1000" height="540" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container_Page3" style="pointer-events:none; overflow:hidden; width:1000px; height:540px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </body>

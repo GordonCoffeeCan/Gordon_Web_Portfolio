@@ -15,6 +15,7 @@
 .titlePage div{
 	margin: auto;
 	padding-top: 20%;
+	
 }
 
 .paragraphSpace{
@@ -24,6 +25,7 @@
 .paragraphSpace div{
 	margin: auto;
 	width: 1000px;
+	
 }
 
 .spliteLine{
@@ -33,13 +35,14 @@
 .sectionContent{
 	padding-top: 48px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 26px;
 	font-family: 'Source Sans Pro', sans-serif;
 	padding-bottom: 20px;
+	line-height:  42px;
 }
 
 .features{
-	width: 25%;
+	width: 50%;
 	float: left;
 	text-align: center;
 	padding-bottom: 20px;
@@ -57,14 +60,27 @@
 
 /*--- Start Parallax here-----*/
 
-.parallax{
+#parallax_1{
 	background: url(Images/Gordon.jpg) no-repeat fixed;
 	background-size: cover;
 	background-position: center;
+	z-index: -100;
 }
 
-.parallax2{
+#parallax_2{
 	background:  url(Images/WorkStation.jpg) fixed no-repeat;
+	background-size: cover;
+	background-position:  center;
+}
+
+#parallax_3{
+	background:  url(Images/MPMP.jpg) fixed no-repeat;
+	background-size: cover;
+	background-position:  center;
+}
+
+#parallax_4{
+	background:  url(Images/lenovo_thinkpad.jpg) fixed no-repeat;
 	background-size: cover;
 	background-position:  center;
 }
