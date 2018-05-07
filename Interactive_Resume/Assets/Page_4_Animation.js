@@ -1,10 +1,10 @@
-// JavaScript Document
 var canvas4, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function initPage4() {
 	canvas4 = document.getElementById("canvas_Page4");
 	anim_container = document.getElementById("animation_container_Page4");
 	dom_overlay_container = document.getElementById("dom_overlay_container_Page4");
 	images = images||{};
+	ss = ss||{};
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", handleFileLoad);
 	loader.addEventListener("complete", handleCompletePage4);

@@ -18,11 +18,41 @@
 }
 
 .paragraphSpace{
-	margin: 10% auto;
+	margin: 38px auto 80px auto;
 }
 
 .paragraphSpace div{
 	margin: auto;
+	width: 1000px;
+}
+
+.spliteLine{
+	border-bottom: solid thin #333333;
+}
+
+.sectionContent{
+	padding-top: 48px;
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-bottom: 20px;
+}
+
+.features{
+	width: 25%;
+	float: left;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.features i{
+	padding: 13% 0 4% 0;
+}
+
+.features img{
+	max-width: 95%;
+	width: auto;
+	height: auto;
 }
 
 /*--- Start Parallax here-----*/

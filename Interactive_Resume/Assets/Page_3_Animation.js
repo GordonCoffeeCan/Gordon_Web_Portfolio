@@ -1,7 +1,7 @@
 // JavaScript Document
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+var canvas3, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function initPage3() {
-	canvas = document.getElementById("canvas_Page3");
+	canvas3 = document.getElementById("canvas_Page3");
 	anim_container = document.getElementById("animation_container_Page3");
 	dom_overlay_container = document.getElementById("dom_overlay_container_Page3");
 	images = images||{};
@@ -22,7 +22,7 @@ function handleCompletePage3(evt) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
 	exportRoot = new lib_page3.InteractiveResume();
-	stage = new createjs.Stage(canvas);
+	stage = new createjs.Stage(canvas3);
 	stage.addChild(exportRoot);	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
