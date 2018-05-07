@@ -318,7 +318,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,678.6,434.2);
 
 	this.instance_2 = new lib.WebAnim_mc();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(202.6,165,0.6,0.6,0,0,0,201.5,213.6);
+	this.instance_2.setTransform(195.2,165,0.6,0.6,0,0,0,201.5,213.6);
 
 	this.instance_3 = new lib.Computer_mc();
 	this.instance_3.parent = this;
@@ -336,12 +336,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,678.6,434.2);
 	// layer 1
 	this.instance = new lib.Page_4_mc();
 	this.instance.parent = this;
-	this.instance.setTransform(500,150,1,1,0,0,0,242.5,145.9);
+	this.instance.setTransform(500,154.1,1,1,0,0,0,242.5,145.9);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(757.5,154.1,485,291.8);
+p.nominalBounds = new cjs.Rectangle(757.5,158.2,485,291.8);
 // library properties:
 lib.properties = {
 	width: 1000,
@@ -350,7 +350,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Page_4_atlas_.png?1525707537788", id:"Page_4_atlas_"}
+		{src:"images/Page_4_atlas_.png?1525726431129", id:"Page_4_atlas_"}
 	],
 	preloads: []
 };
