@@ -342,21 +342,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,702,466);
 	// layer 1
 	this.instance = new lib.Page_4_mc();
 	this.instance.parent = this;
-	this.instance.setTransform(257.5,3.5,1,1,0,0,0,0,1);
+	this.instance.setTransform(257.5,10.9,1,1,0,0,0,0,1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(757.5,155,485,300.2);
+p.nominalBounds = new cjs.Rectangle(757.5,164.9,485,300.2);
 // library properties:
 lib.properties = {
 	width: 1000,
-	height: 305,
+	height: 310,
 	fps: 60,
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Page_4_atlas_.png?1525664551386", id:"Page_4_atlas_"}
+		{src:"images/Page_4_atlas_.png?1525666631945", id:"Page_4_atlas_"}
 	],
 	preloads: []
 };
