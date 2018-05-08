@@ -72,31 +72,31 @@
 /*--- Start Parallax here-----*/
 
 #parallax_1{
-	background: url(Images/Gordon.jpg) no-repeat fixed;
+	background: url(images/Gordon.jpg) no-repeat fixed;
 	background-size: cover;
 	background-position: center;
 }
 
 #parallax_2{
-	background:  url(Images/WorkStation.jpg) fixed no-repeat;
+	background:  url(images/WorkStation.jpg) fixed no-repeat;
 	background-size: cover;
 	background-position:  center;
 }
 
 #parallax_3{
-	background:  url(Images/MPMP.jpg) fixed no-repeat;
+	background:  url(images/MPMP.jpg) fixed no-repeat;
 	background-size: cover;
 	background-position:  center;
 }
 
 #parallax_4{
-	background:  url(Images/lenovo_thinkpad.jpg) fixed no-repeat;
+	background:  url(images/lenovo_thinkpad.jpg) fixed no-repeat;
 	background-size: cover;
 	background-position:  center;
 }
 
 #parallax_5{
-	background:  url(Images/AfterDetonationMainMenu.jpg) fixed no-repeat;
+	background:  url(images/AfterDetonationMainMenu.jpg) fixed no-repeat;
 	background-size: cover;
 	background-position:  center;
 }
