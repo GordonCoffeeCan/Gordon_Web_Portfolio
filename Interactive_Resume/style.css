@@ -28,6 +28,17 @@
 	
 }
 
+.paragraphSpace img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.paragraphSpace iframe{
+	margin: 30px auto;
+	display: block;
+}
+
 .spliteLine{
 	border-bottom: solid thin #333333;
 }
@@ -64,7 +75,6 @@
 	background: url(Images/Gordon.jpg) no-repeat fixed;
 	background-size: cover;
 	background-position: center;
-	z-index: -100;
 }
 
 #parallax_2{
@@ -81,6 +91,12 @@
 
 #parallax_4{
 	background:  url(Images/lenovo_thinkpad.jpg) fixed no-repeat;
+	background-size: cover;
+	background-position:  center;
+}
+
+#parallax_5{
+	background:  url(Images/AfterDetonationMainMenu.jpg) fixed no-repeat;
 	background-size: cover;
 	background-position:  center;
 }

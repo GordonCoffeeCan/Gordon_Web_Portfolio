@@ -305,9 +305,8 @@ p.nominalBounds = new cjs.Rectangle(1.4,-14.6,200.6,183.3);
 	// Mask (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	var mask_graphics_11 = new cjs.Graphics().p("AxpKKIAA0TMAjTAAAIAAUTg");
-
-	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(11).to({graphics:mask_graphics_11,x:113,y:65}).wait(104));
+	mask.graphics.p("AxpKKIAA0TMAjTAAAIAAUTg");
+	mask.setTransform(113,65);
 
 	// Layer 7
 	this.shape = new cjs.Shape();
@@ -335,7 +334,7 @@ p.nominalBounds = new cjs.Rectangle(1.4,-14.6,200.6,183.3);
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(11).to({_off:false},0).wait(3).to({startPosition:0},0).to({x:72.7},80).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(14).to({_off:false},0).to({x:72.7},80).wait(21));
 
 	// Layer 4
 	this.instance_1 = new lib.Platform_mc("synched",0);
@@ -349,7 +348,7 @@ p.nominalBounds = new cjs.Rectangle(1.4,-14.6,200.6,183.3);
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(11).to({_off:false},0).wait(3).to({startPosition:0},0).to({x:-89.9},80).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(14).to({_off:false},0).to({x:-89.9},80).wait(21));
 
 	// Layer 3
 	this.instance_2 = new lib.Platform_mc("synched",0);
@@ -363,13 +362,12 @@ p.nominalBounds = new cjs.Rectangle(1.4,-14.6,200.6,183.3);
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(11).to({_off:false},0).wait(3).to({startPosition:0},0).to({x:-252.5},80).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(14).to({_off:false},0).to({x:-252.5},80).wait(21));
 
 	// Player
 	this.instance_3 = new lib.FakePlayer_mc("synched",0);
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(65.3,112.6,1,1,0,0,0,7,7);
-	this.instance_3._off = true;
 
 	var maskedShapeInstanceList = [this.instance_3];
 
@@ -377,13 +375,12 @@ p.nominalBounds = new cjs.Rectangle(1.4,-14.6,200.6,183.3);
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(11).to({_off:false},0).wait(3).to({startPosition:0},0).wait(16).to({startPosition:0},0).to({y:2.6},9).to({y:33.1},5).wait(5).to({startPosition:0},0).to({y:-16.9},11).to({y:83.1},10).wait(5).to({startPosition:0},0).to({y:3.1},12).to({y:43.1},7).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(14).to({startPosition:0},0).wait(16).to({startPosition:0},0).to({y:2.6},9).to({y:33.1},5).wait(5).to({startPosition:0},0).to({y:-16.9},11).to({y:83.1},10).wait(5).to({startPosition:0},0).to({y:3.1},12).to({y:43.1},7).wait(21));
 
 	// Layer 1
 	this.shape_1 = new cjs.Shape();
 	this.shape_1.graphics.f("#666666").s().p("AxpA0IAAhnMAjTAAAIAABng");
 	this.shape_1.setTransform(113,124.8);
-	this.shape_1._off = true;
 
 	var maskedShapeInstanceList = [this.shape_1];
 
@@ -391,7 +388,7 @@ p.nominalBounds = new cjs.Rectangle(1.4,-14.6,200.6,183.3);
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(11).to({_off:false},0).wait(104));
+	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,105.6,226,24.5);
@@ -497,13 +494,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,42.9,28.8);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(59).to({_off:false},0).wait(89).to({startPosition:89},0).to({regY:67,scaleX:0.49,scaleY:0.49,y:104.5,alpha:0,startPosition:9},10).to({_off:true},1).wait(124));
 
 	// Game
-	this.instance_1 = new lib.GameAnim_mc("synched",11,false);
+	this.instance_1 = new lib.GameAnim_mc("synched",0,false);
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(170.1,103.2,0.443,0.443,0,0,0,113.7,60);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(158).to({_off:false},0).to({regX:113.8,scaleX:1,scaleY:1,x:170.2,y:103.1,alpha:1},11).wait(103).to({startPosition:114},0).to({regX:113.7,scaleX:0.44,scaleY:0.44,x:170.1,y:103.2,alpha:0,startPosition:11},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(158).to({_off:false},0).to({regX:113.8,scaleX:1,scaleY:1,x:170.2,y:103.1,alpha:1,startPosition:11},11).wait(103).to({startPosition:114},0).to({regX:113.7,scaleX:0.44,scaleY:0.44,x:170.1,y:103.2,alpha:0,startPosition:11},10).wait(1));
 
 	// NoteBook
 	this.instance_2 = new lib.NotebookAnim_mc("synched",0,false);
@@ -562,7 +559,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Page_6_atlas_.png?1525729864390", id:"Page_6_atlas_"}
+		{src:"images/Page_6_atlas_.png?1525749513247", id:"Page_6_atlas_"}
 	],
 	preloads: []
 };
