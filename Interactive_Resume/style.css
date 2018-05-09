@@ -83,10 +83,6 @@
 
 .paragraphSpace{
 	margin: 0 auto 60px auto;
-}
-
-.paragraphSpace div{
-	margin: auto;
 	width: 1000px;
 }
 
@@ -101,8 +97,42 @@
 	display: block;
 }
 
+.gallery{
+	padding-top: 20px;
+	margin: 0 auto 60px auto;
+	width: 1000px;
+}
+
+.projectSpliter{
+	border-bottom: solid thin #333333;
+	padding: 10px 0;
+}
+
+.gallery img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.gallery iframe{
+	margin: 30px auto;
+	display: block;
+}
+
 .spliteLine{
 	border-bottom: solid thin #333333;
+}
+
+.projects{
+	padding-top: 48px;
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 26px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	padding-bottom: 20px;
+	line-height:  42px;
+	width: auto;
 }
 
 .sectionContent{
@@ -112,6 +142,7 @@
 	font-family: 'Source Sans Pro', sans-serif;
 	padding-bottom: 20px;
 	line-height:  42px;
+	width: auto;
 }
 
 .features div{
