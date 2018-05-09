@@ -52,10 +52,10 @@ function handleCompletePage2(evt) {
 					sRatio = Math.max(xRatio, yRatio);				
 				}			
 			}			
-			canvas.width = w*pRatio*sRatio;			
-			canvas.height = h*pRatio*sRatio;
-			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
-			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			canvas2.width = w*pRatio*sRatio;			
+			canvas2.height = h*pRatio*sRatio;
+			canvas2.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas2.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
 			stage.scaleX = pRatio*sRatio;			
 			stage.scaleY = pRatio*sRatio;			
 			lastW = iw; lastH = ih; lastS = sRatio;		

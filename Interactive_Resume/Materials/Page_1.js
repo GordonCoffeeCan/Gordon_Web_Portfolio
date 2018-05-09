@@ -29,7 +29,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#333333").ss(0.1,1,1).p("EhOHAAAMCcPAAA");
+	this.shape.graphics.f().s("#333333").ss(1,2,1).p("EhOHAAAMCcPAAA");
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -98,48 +98,31 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 }).prototype = getMCSymbolPrototype(lib.hi_mc, new cjs.Rectangle(-23.6,0,47.2,66.9), null);
 
 
-(lib.Page_0_mc = function(mode,startPosition,loop) {
+(lib.Page_1_mc = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_0 = function() {
-		this.parent.stop();
-	}
-	this.frame_44 = function() {
-		this.stop();
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(44).call(this.frame_44).wait(1));
 
 	// UpperText
 	this.UpperText_mc = new lib.hi_mc();
 	this.UpperText_mc.parent = this;
-	this.UpperText_mc.setTransform(20.1,-28.5,1,1,0,0,0,20.1,23.2);
-	this.UpperText_mc.alpha = 0;
-	this.UpperText_mc._off = true;
+	this.UpperText_mc.setTransform(20.1,-44,1,1,0,0,0,20.1,23.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.UpperText_mc).wait(15).to({_off:false},0).to({y:-44,alpha:1},19,cjs.Ease.get(0.01)).wait(11));
+	this.timeline.addTween(cjs.Tween.get(this.UpperText_mc).wait(1));
 
 	// LowerText
 	this.LowerText_mc = new lib.imGordon_mc();
 	this.LowerText_mc.parent = this;
-	this.LowerText_mc.setTransform(95.5,7.8,1,1,0,0,0,95.5,23.2);
-	this.LowerText_mc.alpha = 0;
-	this.LowerText_mc._off = true;
+	this.LowerText_mc.setTransform(95.5,28,1,1,0,0,0,95.5,23.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.LowerText_mc).wait(25).to({_off:false},0).to({y:28,alpha:1},19,cjs.Ease.get(0.01)).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.LowerText_mc).wait(1));
 
 	// SplitLine
 	this.instance = new lib.StageSpliteLine_mc();
 	this.instance.parent = this;
-	this.instance.setTransform(0,0.1,0.1,1,0,0,0,0,0.1);
-	this.instance.alpha = 0;
+	this.instance.setTransform(0,0.1,0.8,1,0,0,0,0,0.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regY:0,scaleX:0.22,y:0,alpha:0.172},0).wait(1).to({scaleX:0.27,alpha:0.245},0).wait(1).to({scaleX:0.31,alpha:0.3},0).wait(1).to({scaleX:0.34,alpha:0.347},0).wait(1).to({scaleX:0.37,alpha:0.388},0).wait(1).to({scaleX:0.4,alpha:0.425},0).wait(1).to({scaleX:0.42,alpha:0.459},0).wait(1).to({scaleX:0.44,alpha:0.491},0).wait(1).to({scaleX:0.46,alpha:0.52},0).wait(1).to({scaleX:0.48,alpha:0.548},0).wait(1).to({scaleX:0.5,alpha:0.574},0).wait(1).to({scaleX:0.52,alpha:0.599},0).wait(1).to({scaleX:0.54,alpha:0.623},0).wait(1).to({scaleX:0.55,alpha:0.646},0).wait(1).to({scaleX:0.57,alpha:0.667},0).wait(1).to({scaleX:0.58,alpha:0.688},0).wait(1).to({scaleX:0.6,alpha:0.708},0).wait(1).to({scaleX:0.61,alpha:0.727},0).wait(1).to({scaleX:0.62,alpha:0.746},0).wait(1).to({scaleX:0.63,alpha:0.764},0).wait(1).to({scaleX:0.65,alpha:0.781},0).wait(1).to({scaleX:0.66,alpha:0.797},0).wait(1).to({scaleX:0.67,alpha:0.813},0).wait(1).to({scaleX:0.68,alpha:0.828},0).wait(1).to({scaleX:0.69,alpha:0.843},0).wait(1).to({scaleX:0.7,alpha:0.857},0).wait(1).to({scaleX:0.71,alpha:0.87},0).wait(1).to({scaleX:0.72,alpha:0.883},0).wait(1).to({scaleX:0.73,alpha:0.895},0).wait(1).to({scaleX:0.74,alpha:0.907},0).wait(1).to({scaleX:0.74,alpha:0.918},0).wait(1).to({scaleX:0.75,alpha:0.929},0).wait(1).to({scaleX:0.76,alpha:0.939},0).wait(1).to({scaleX:0.76,alpha:0.948},0).wait(1).to({scaleX:0.77,alpha:0.957},0).wait(1).to({scaleX:0.78,alpha:0.965},0).wait(1).to({scaleX:0.78,alpha:0.972},0).wait(1).to({scaleX:0.79,alpha:0.979},0).wait(1).to({scaleX:0.79,alpha:0.985},0).wait(1).to({scaleX:0.79,alpha:0.99},0).wait(1).to({scaleX:0.8,alpha:0.994},0).wait(1).to({scaleX:0.8,alpha:0.997},0).wait(1).to({scaleX:0.8,alpha:0.999},0).wait(1).to({regY:0.1,scaleX:0.8,y:0.1,alpha:1},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-50,0,100,0.1);
+}).prototype = getMCSymbolPrototype(lib.Page_1_mc, new cjs.Rectangle(-400.5,-67.2,801,138.9), null);
 
 
 // stage content:
@@ -147,18 +130,18 @@ p.nominalBounds = new cjs.Rectangle(-50,0,100,0.1);
 	this.initialize(mode,startPosition,loop,{});
 
 	// layer 1
-	this.instance = new lib.Page_0_mc();
+	this.instance = new lib.Page_1_mc();
 	this.instance.parent = this;
-	this.instance.setTransform(500,69.5);
+	this.instance.setTransform(500,77);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(950,139,100,0.1);
+p.nominalBounds = new cjs.Rectangle(599.5,89.8,801,138.9);
 // library properties:
 lib.properties = {
 	width: 1000,
-	height: 139,
+	height: 160,
 	fps: 60,
 	color: "#FFFFFF",
 	opacity: 1.00,
