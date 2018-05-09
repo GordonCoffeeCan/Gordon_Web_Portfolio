@@ -147,7 +147,11 @@
 
 .gallery{
 	width: 1000px;
-	margin: auto;
+	margin: auto;;
+}
+
+#lastGallery{
+	margin: auto auto 36px auto;
 }
 
 .prjectCategory{
