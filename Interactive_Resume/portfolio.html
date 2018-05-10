@@ -73,37 +73,37 @@
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/Audi_Icon.png"></a>
+		<a><img src="images/Audi_Icon.png"></a>
 		<p><b>Project Name</b><br>3D Modeling<br><b>Role: </b>Role<br><b>Year: </b>2018</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/Audi_Icon.png"></a>
+		<a><img src="images/Audi_Icon.png"></a>
 		<p><b>Project Name</b><br>3D Modeling<br><b>Role: </b>Role<br><b>Year: </b>2018</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/Boat3D_Icon.png"></a>
+		<a onClick="boat3DOverlayOn()"><img src="images/Boat3D_Icon.png"></a>
 		<p><b>Sailboat and Island</b><br>3D Modeling<br><b>Role: </b>3D Artist<br><b>Year: </b>2018</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/T_Rex_Icon.png"></a>
+		<a onClick="tRex3DOverlayOn()"><img src="images/T_Rex_Icon.png"></a>
 		<p><b>T-Rex</b><br>3D Modeling<br><b>Role: </b>Role<br><b>Year: </b>2017</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/Hero3D_Icon.png"></a>
+		<a onClick="adHero3DOverlayOn()"><img src="images/Hero3D_Icon.png"></a>
 		<p><b>"After Detonation Zombie Story" - Hero</b><br>3D Modeling<br><b>Role: </b>Role<br><b>Year: </b>2015</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/Engineer3D_Icon.png"></a>
+		<a onClick="adEngineer3DOverlayOn()"><img src="images/Engineer3D_Icon.png"></a>
 		<p><b>"After Detonation Zombie Story" - Engineer</b><br>3D Modeling<br><b>Role: </b>Role<br><b>Year: </b>2015</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/Zombie3D_Icon.png"></a>
+		<a onClick="adZombie3DOverlayOn()"><img src="images/Zombie3D_Icon.png"></a>
 		<p><b>"After Detonation Zombie Story" - Zombie</b><br>3D Modeling<br><b>Role: </b>Role<br><b>Year: </b>2015</p>
 	</div>
 	
@@ -131,7 +131,7 @@
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/MVAnimation_Icon.png"></a>
+		<a onClick="deceptaconOverlayOn()"><img src="images/MVAnimation_Icon.png"></a>
 		<p><b>Deceptacon Music Video</b><br>Video<br><b>Role: </b>Flash Animation Designer<br><b>Year: </b>2010</p>
 	</div>
 	
@@ -160,13 +160,13 @@
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/InstallationDesign_icon.png"></a>
+		<a onClick="redaOverlayOn()"><img src="images/InstallationDesign_icon.png"></a>
 		<p><b>REDA - Ecofriend</b><br>Installation<br><b>Role: </b>Graphic Designer &amp; Photographer<br><b>Year: </b>2011</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/GraphicDesign_icon.png"></a>
-		<p><b>The Huton Hunter - Short Story Poster</b><br>News Paper Illustration<br><b>Role: </b>Graphic Designer<br><b>Year: </b>2011</p>
+		<a onClick="theHutongHunterOverlayOn()"><img src="images/GraphicDesign_icon.png"></a>
+		<p><b>The Hutong Hunter - Short Story Poster</b><br>News Paper Illustration<br><b>Role: </b>Graphic Designer<br><b>Year: </b>2011</p>
 	</div>
 	
 </section>
@@ -175,9 +175,68 @@
 	<p>© Gordon Game 2018 - <i>The Portfolio of Gordon Lee Design</i></p>
 </section>
 
-<div class="overlay">
-	<div id="reda"><img></div>
-	<p>This is the Description</p>
+<div class="overlay" id="boat3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="boat3DOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/975e2f56621344bfb6a2a081f3993339/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="tRex3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="tRex3DOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/79582666e5074b21b08c00862eee12bf/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="adHero3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="adHero3DOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/ff5e5907eb3141b08aafd2f81b50781b/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="adEngineer3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="adEngineer3DOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/a967441eb99f424b9b5ec475b96c9b85/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="adZombie3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="adZombie3DOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/c65a72e3df5f43ac9c9dd14dfcb6682a/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="deceptaconFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="deceptaconOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://www.youtube.com/embed/UuxN4Xx-y0U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="redaFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="redaOverlayOff()">
+		<img class="projectImage" src="images/InstallationDesign_icon.png">
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="theHutongHunterFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="theHutongHunterOverlayOff()">
+		<img class="projectImage" src="images/GraphicDesign_icon.png">
+		<p>This is the Description</p>
+	</div>
 </div>
 
 </body>
