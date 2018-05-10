@@ -10,7 +10,6 @@
 #menuLayout{
 	position:fixed;
 	width:100%;
-	background:url(elements/menu_bg.png) repeat-x;
 	background: #FFF;
 	z-index: 2;
 	border-bottom: #888 solid thin;
@@ -34,7 +33,7 @@
 
 #mainMenu li a{
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	color:#888;
 	text-decoration:none;
 	padding: 2px 30px;
@@ -43,6 +42,51 @@
 #mainMenu li a:hover{
 	background: #EEE;
 	color: #333;
+}
+
+#subMenuLayout{
+	width:1000px;
+	height: 0;
+	margin: auto;
+	z-index: 2;
+}
+
+#subMenu{
+	position: fixed;
+	top: 20px;
+	font-size: 18px;
+	width: auto;
+	margin-top: 50px;
+	margin-left: 1010px;
+	text-align: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:#888;
+}
+
+#subMenu ul{
+	padding: 20px 0;
+	list-style: none;
+}
+
+#subMenu li{
+	margin: 20px 3px;
+}
+
+#subMenu li a{
+	color:#888;
+	font-size: 16px;
+	text-decoration:none;
+	padding: 3px 5px;
+}
+
+#subMenu li a:hover{
+	background: #EEE;
+	color: #333;
+}
+
+#shortBorder{
+	width: 32px;
+	border-bottom: #888 solid thin;
 }
 
 .titlePage{
@@ -155,10 +199,12 @@
 	margin: auto auto 36px auto;
 }
 
-.prjectCategory{
+.projectCategory{
+	padding-top: 50px;
 	margin-bottom: 20px;
 	text-align: left;
 	font-size: 26px;
+	color: #888;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
 	padding-bottom: 5px;
