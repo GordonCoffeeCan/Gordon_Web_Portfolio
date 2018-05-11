@@ -42,6 +42,9 @@ function adZombie3DOverlayOff(){
 
 function deceptaconOverlayOn(){
 	document.getElementById("deceptaconFrame").style.display = "block";
+	$(function(){
+		$('#deceptaconFrame').find('iframe').attr('src', 'https://www.youtube.com/embed/UuxN4Xx-y0U');
+	});
 }
 
 function deceptaconOverlayOff(){
@@ -63,3 +66,9 @@ function theHutongHunterOverlayOn(){
 function theHutongHunterOverlayOff(){
 	document.getElementById("theHutongHunterFrame").style.display = "none";
 }
+
+$(function(){
+	$('.crossButton').click(function(){
+		$('#deceptaconFrame').find('iframe').attr('src', '');
+	});
+});

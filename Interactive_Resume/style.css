@@ -12,7 +12,7 @@
 	width:100%;
 	background: #FFF;
 	z-index: 2;
-	border-bottom: #888 solid thin;
+	border-bottom: #666 solid thin;
 }
 
 #mainMenu{
@@ -34,14 +34,14 @@
 #mainMenu li a{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
-	color:#888;
+	color:#666;
 	text-decoration:none;
 	padding: 2px 30px;
 }
 
 #mainMenu li a:hover{
 	background: #EEE;
-	color: #333;
+	color: #222;
 }
 
 #subMenuLayout{
@@ -60,7 +60,7 @@
 	margin-left: 1010px;
 	text-align: left;
 	font-family: 'Source Sans Pro', sans-serif;
-	color:#888;
+	color:#666;
 }
 
 #subMenu ul{
@@ -73,7 +73,7 @@
 }
 
 #subMenu li a{
-	color:#888;
+	color:#666;
 	font-size: 16px;
 	text-decoration:none;
 	padding: 3px 5px;
@@ -81,12 +81,12 @@
 
 #subMenu li a:hover{
 	background: #EEE;
-	color: #333;
+	color: #222;
 }
 
 #shortBorder{
 	width: 32px;
-	border-bottom: #888 solid thin;
+	border-bottom: #666 solid thin;
 }
 
 .titlePage{
@@ -116,6 +116,11 @@
 	font-weight: 400;
 }
 
+.scrollDownAnim{
+	position: absolute;
+	top: 75vh;
+}
+
 .animation{
 	padding-top: 50px;
 	margin: 0 auto 30px auto;
@@ -138,7 +143,7 @@
 }
 
 .spliteLine{
-	border-bottom: solid thin #888;
+	border-bottom: solid thin #666;
 }
 
 .sectionContent{
@@ -149,7 +154,7 @@
 	padding-bottom: 20px;
 	line-height:  42px;
 	width: auto;
-	color: #888;
+	color: #666;
 }
 
 .features{
@@ -165,8 +170,9 @@
 
 .features p{
 	padding-bottom: 16px;
+	line-height: 24px;
 	font-family: 'Source Sans Pro', sans-serif;
-	color: #888;
+	color: #666;
 }
 
 .gameShowCase{
@@ -204,13 +210,13 @@
 	margin-bottom: 20px;
 	text-align: left;
 	font-size: 26px;
-	color: #888;
+	color: #666;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
 	padding-bottom: 5px;
 	line-height:  42px;
 	width: auto;
-	border-bottom: solid #888 thin;
+	border-bottom: solid #666 thin;
 }
 
 #firstCategory{
@@ -218,13 +224,13 @@
 	margin-bottom: 20px;
 	text-align: left;
 	font-size: 26px;
-	color: #888;
+	color: #666;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
 	padding-bottom: 5px;
 	line-height:  42px;
 	width: auto;
-	border-bottom: solid #888 thin;
+	border-bottom: solid #666 thin;
 }
 
 .project{
@@ -239,8 +245,9 @@
 
 .project p{
 	padding-bottom: 10px;
-	color: #888;
+	color: #666;
 	font-size: 14px;
+	line-height: 24px;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
 }
@@ -251,9 +258,9 @@
    	bottom: 0;
     width: 100%;
     background: #FFF;;
-    color: #888;
+    color: #666;
     text-align: center;
-	border-top: #888 solid thin;
+	border-top: #666 solid thin;
 }
 
 .footer p{
@@ -261,7 +268,7 @@
 	width: 1000px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
-	color:#888;
+	color:#666;
 }
 
 /*--- Start Parallax here-----*/

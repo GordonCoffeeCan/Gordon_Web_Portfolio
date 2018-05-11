@@ -7,11 +7,13 @@
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
 <script src="scripts/createjs-2015.11.26.min.js"></script>
 <script src="scripts/Page_2.js"></script>
+<script src="scripts/ScrollDown.js"></script>
 <script src="scripts/Page_2_Animation.js"></script>
+<script src="scripts/ScrollDown_Animation.js"></script>
 <title>Gordon Lee</title>
 </head>
 
-<body onload="initPage2(); initPage3(); initPage4(); initPage5(); initPage6();">
+<body onload="initPage2(); initScroll();">
 
 <div id="menuLayout">
 	<div id="mainMenu">
@@ -30,8 +32,15 @@
 		<h1 id="upperTitle">Hi</h1>
 		<div class="spliteLine"></div>
 		<h1 id="lowerTitle">I'm Gordon</h1>
+		
+	<div class="scrollDownAnim" id="animation_container_Scroll" style="background-color:rgba(255, 255, 255, 0); width:1000px; height:75px">
+		<canvas id="canvas_Scroll" width="1000" height="75" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container_Scroll" style="pointer-events:none; overflow:hidden; width:1000px; height:75px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
 	</div>
 </section>
+
 <section id="parallax_1">
 	<div class="parallax-inner">
 	</div>
