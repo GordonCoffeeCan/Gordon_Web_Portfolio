@@ -138,12 +138,12 @@
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/MPMP_Web_Icon.png"></a>
+		<a onClick="mpmpOverlayOn()"><img src="images/MPMP_Web_Icon.png"></a>
 		<p><b>MPMP Website</b><br>Web<br><b>Role: </b>Web Designer, HTML Programmer<br><b>Year: </b>2013</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/WebDesign_Icon.png"></a>
+		<a onClick="fashionWebsiteOverlayOn()"><img src="images/WebDesign_Icon.png"></a>
 		<p><b>Fashion Design Showcase</b><br>Web(Flash)<br><b>Role: </b>UI/UX Designer, Web Designer, Flash Progammer<br><b>Year: </b>2012</p>
 	</div>
 </section>
@@ -170,12 +170,12 @@
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/Audi_Concpet_Painting_Icon.png"></a>
+		<a onClick="cellMetroOverlayOn()"><img src="images/Audi_Concpet_Painting_Icon.png"></a>
 		<p><b>Audi Concept Campaign</b><br>Vehicle Concept<br><b>Role: </b>Digital Artist<br><b>Year: </b>2015</p>
 	</div>
 	
 	<div class="project">
-		<a href=""><img src="images/AlienConcept_Icon.png"></a>
+		<a onClick="alienConceptOverlayOn()"><img src="images/AlienConcept_Icon.png"></a>
 		<p><b>Alien Concept</b><br>Concept Art<br><b>Role: </b>Digital Artist<br><b>Year: </b>2011</p>
 	</div>
 	
@@ -244,6 +244,22 @@
 	</div>
 </div>
 
+<div class="overlay" id="mpmpFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="mpmpOverlayOff()">
+		<img class="projectImage" src="images/MPMP_ProjectImage.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="fashionWebsiteFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="fashionWebsiteOverlayOff()">
+		<img class="projectImage" src="images/fashionWebsite.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
 <div class="overlay" id="deceptaconFrame">
 	<div class="imageFrame">
 		<img id="stopDeceptacon" class="crossButton" src="images/CrossButton.png" onClick="deceptaconOverlayOff()">
@@ -252,10 +268,26 @@
 	</div>
 </div>
 
+<div class="overlay" id="cellMetroFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="cellMetroOverlayOff()">
+		<img class="projectImage" src="images/CellMetro.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="alienConceptFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="alienConceptOverlayOff()">
+		<img class="projectImage" src="images/AlienConcept.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
 <div class="overlay" id="redaFrame">
 	<div class="imageFrame">
 		<img class="crossButton" src="images/CrossButton.png" onClick="redaOverlayOff()">
-		<img class="projectImage" src="images/InstallationDesign_icon.png">
+		<img class="projectImage" src="images/REDA.jpg">
 		<p>This is the Description</p>
 	</div>
 </div>
@@ -263,7 +295,7 @@
 <div class="overlay" id="theHutongHunterFrame">
 	<div class="imageFrame">
 		<img class="crossButton" src="images/CrossButton.png" onClick="theHutongHunterOverlayOff()">
-		<img class="projectImage" src="images/GraphicDesign_icon.png">
+		<img class="projectImage" src="images/Story_Poster.jpg">
 		<p>This is the Description</p>
 	</div>
 </div>

@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	scroll-behavior:smooth;
 }
 
 #menuLayout{
@@ -250,6 +251,24 @@
 	line-height: 24px;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
+}
+
+#moreProjects{
+	margin: auto auto 26px auto;
+	text-align: right;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+#moreProjects a{
+	color: #666;
+	text-decoration: none;
+}
+
+#moreProjects a:hover{
+	background: #ccc;
+	color: #333;
 }
 
 .footer{

@@ -23,7 +23,7 @@
 
 .imageFrame{
 	width: 1000px;
-	margin: 15vh auto 0 auto;
+	margin: 36px auto 0 auto;
 }
 
 .projectImage{
@@ -32,10 +32,17 @@
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
 }
 
+.projectImage:not(iframe){
+	height: 70vh;
+}
+
+#mpmpFrame img, #fashionWebsiteFrame img{
+	height: auto;
+}
+
 .crossButton{
 	position: relative;
 	left: 968px;
-	top: -32px;
 	cursor: pointer;
 }
 
