@@ -1,5 +1,13 @@
 // JavaScript Document
 
+function riverBandDOverlayOn(){
+	document.getElementById("riverBand3DFrame").style.display = "block";
+}
+
+function riverBandDOverlayOff(){
+	document.getElementById("riverBand3DFrame").style.display = "none";
+}
+
 function boat3DOverlayOn(){
 	document.getElementById("boat3DFrame").style.display = "block";
 }
