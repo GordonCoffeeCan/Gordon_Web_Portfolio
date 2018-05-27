@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="overlayStyle.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
 <script src="scripts/createjs-2015.11.26.min.js"></script>
 <script src="scripts/Page_3.js"></script>
@@ -55,24 +56,25 @@
 </section>
 
 <section class="paragraphSpace">
+	
 	<div class="features">
-		<a href="#"><img src="images/Pixel_Alienoid_icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
+		<a href="https://mostopha.itch.io/rayhas-poem" target="_blank"><img src="images/RayhasPoem_Icon.png"></a>
+		<p><b>Rayha's Poem</b><br>Platformer<br><b>Platform: </b>Win &amp; Mac<br><b>Role: </b>3D Artis, Game Programmer and Designer<br><b>Year: </b>2018</p>
+	</div>
+
+	<div class="features">
+		<a href="https://gordonlee.itch.io/pixel-alienoid" target="_blank"><img src="images/Pixel_Alienoid_icon.png"></a>
+		<p><b>Pixel Alienoid</b><br>Action<br><b>Platform: </b>Win, Mac &amp; Web<br><b>Role: </b>Game Designer, Game Programmer, Game Artist<br><b>Year: </b>2018</p>
 	</div>
 	
 	<div class="features">
-		<a href="#"><img src="images/CatchGarbage_Icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
+		<a href="https://gordonlee.itch.io/catchgarbage" target="_blank"><img src="images/CatchGarbage_Icon.png"></a>
+		<p><b>Catch Garbage</b><br>Action<br><b>Platform: </b>Win &amp; Mac &amp; Web<br><b>Role: </b>Game Designer, Game Programmer, Game Artist<br><b>Year: </b>2017</p>
 	</div>
 	
 	<div class="features">
-		<a href="#"><img src="images/TopDownStealth_Icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
-	</div>
-	
-	<div class="features">
-		<a href="#"><img src="images/Treasure_Icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
+		<a href="https://gordonlee.itch.io/treasure" target="_blank"><img src="images/Treasure_Icon.png"></a>
+		<p><b>Treasure</b><br>Puzzle<br><b>Platform: </b>Web<br><b>Role: </b>Game Designer, Game Programmer, Game Artist<br><b>Year: </b>2016</p>
 	</div>
 		
 	<div class="sectionContent">
@@ -97,23 +99,23 @@
 
 <section class="paragraphSpace">
 	<div class="features">
-		<a href="#"><img src="images/WebDesign_Icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
+		<a onClick="fashionWebsiteOverlayOn()"><img src="images/WebDesign_Icon.png"></a>
+		<p><b>Fashion Design Showcase</b><br>Web(Flash)<br><b>Role: </b>UI/UX Designer, Web Designer, Flash Progammer<br><b>Year: </b>2012</p>
 	</div>
 	
 	<div class="features">
-		<a href="#"><img src="images/GraphicDesign_icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
+		<a onClick="theHutongHunterOverlayOn()"><img src="images/GraphicDesign_icon.png"></a>
+		<p><b>The Hutong Hunter - Short Story Poster</b><br>News Paper Illustration<br><b>Role: </b>Graphic Designer<br><b>Year: </b>2011</p>
 	</div>
 	
 	<div class="features">
-		<a href="#"><img src="images/MVAnimation_Icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
+		<a onClick="deceptaconOverlayOn()"><img src="images/MVAnimation_Icon.png"></a>
+		<p><b>Deceptacon Music Video</b><br>Video<br><b>Role: </b>Flash Animation Designer<br><b>Year: </b>2010</p>
 	</div>
 	
 	<div class="features">
-		<a href="#"><img src="images/InstallationDesign_icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
+		<a onClick="redaOverlayOn()"><img src="images/InstallationDesign_icon.png"></a>
+		<p><b>REDA - Ecofriend</b><br>Installation<br><b>Role: </b>Graphic Designer &amp; Photographer<br><b>Year: </b>2011</p>
 	</div>
 		
 	<div class="sectionContent">
@@ -124,6 +126,38 @@
 <section class="footer">
 	<p>© Gordon Game 2018 - <i>The Portfolio of Gordon Lee Design</i></p>
 </section>
+
+<div class="overlay" id="fashionWebsiteFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="fashionWebsiteOverlayOff()">
+		<img class="projectImage" src="images/fashionWebsite.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="theHutongHunterFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="theHutongHunterOverlayOff()">
+		<img class="projectImage" src="images/Story_Poster.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="deceptaconFrame">
+	<div class="imageFrame">
+		<img id="stopDeceptacon" class="crossButton" src="images/CrossButton.png" onClick="deceptaconOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://www.youtube.com/embed/UuxN4Xx-y0U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="redaFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="redaOverlayOff()">
+		<img class="projectImage" src="images/REDA.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
 
 </body>
 </html>

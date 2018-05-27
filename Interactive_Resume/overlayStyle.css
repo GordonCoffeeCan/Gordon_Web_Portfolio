@@ -36,16 +36,12 @@
 	height: 70vh;
 }
 
-#mpmpFrame img, #fashionWebsiteFrame img{
+#mpmpFrame img, #fashionWebsiteFrame img, #audiQ3Frame img, #beetlesFrame img, #benzFrame img, #theHutongHunterFrame img{
 	height: auto;
 }
 
 .crossButton{
 	position: relative;
 	left: 968px;
-	cursor: pointer;
-}
-
-.project a{
 	cursor: pointer;
 }

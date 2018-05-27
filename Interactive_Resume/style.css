@@ -176,6 +176,10 @@
 	color: #666;
 }
 
+.features a{
+	cursor: pointer;
+}
+
 .gameShowCase{
 	width: 100%;
 	float: left;
@@ -253,6 +257,10 @@
 	text-align: center;
 }
 
+.project a{
+	cursor: pointer;
+}
+
 #moreProjects{
 	margin: auto auto 26px auto;
 	text-align: right;
@@ -269,6 +277,54 @@
 #moreProjects a:hover{
 	background: #ccc;
 	color: #333;
+}
+
+#contactInfo{
+	padding-top: 50px;
+	width: 1000px;
+	margin: auto;
+	color: #666;
+	font-size: 16px;
+	line-height: 32px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.column{
+	width: 50%;
+	float: left;
+}
+
+.column img{
+	width: 180px;
+}
+
+.column ul{
+	list-style:none;
+	margin: 30px;
+}
+
+.column li{
+	padding-bottom: 3px;
+}
+
+.column li a{
+	text-decoration: none;
+	color: #666;
+	padding: 2px 10px;
+}
+
+.column li a:hover{
+	background: #EEE;
+	color: #222;
+}
+
+#leftColumn{
+	font-size: 20px;
+	text-align: right;
+}
+
+#rightColumn{
+	text-align: left;
 }
 
 .footer{

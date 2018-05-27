@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="overlayStyle.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
 <script src="scripts/createjs-2015.11.26.min.js"></script>
 <script src="scripts/Page_4.js"></script>
@@ -12,6 +13,7 @@
 <script src="scripts/Page_4_Animation.js"></script>
 <script src="scripts/Page_5_Animation.js"></script>
 <script src="scripts/Page_6_Animation.js"></script>
+<script src="scripts/PageBehaviors.js"></script>
 <title>Gordon Lee</title>
 </head>
 
@@ -131,42 +133,29 @@
 
 <section class="paragraphSpace">
 	<div class="features">
-		<a href="#"><img src="images/Audi_Icon.png"></a>
+		<a onClick="audiQ3OverlayOn()"><img src="images/Audi_Icon.png"></a>
 		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
 	</div>
 	
 	<div class="features">
-		<a href="#"><img src="images/Beetle_Icon.png"></a>
+		<a onClick="beetlesOverlayOn()"><img src="images/Beetle_Icon.png"></a>
 		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
 	</div>
 	
 	<div class="features">
-		<a href="#"><img src="images/Benz_Icon.png"></a>
+		<a onClick="benzOverlayOn()"><img src="images/Benz_Icon.png"></a>
 		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
 	</div>
 	
 	<div class="features">
-		<a href="#"><img src="images/Lenovo_Icon.png"></a>
+		<a onClick="lenovoOverlayOn()"><img src="images/Lenovo_Icon.png"></a>
 		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
 	</div>
 	
 	<div class="sectionContent">
-		<p>I was responsible for Flash Website designing and developing by using Flash and coded with ActionScript3, and making animated Banners, for vairous world-wide brands, etc. <i>Volkswagen</i>, <i>Benz</i>, <i>Audi</i>.</p>
+		<p>I was responsible for Flash Website designing and developing by using Flash and coded with ActionScript3, and making animated Banners, for vairous world-wide brands, etc. <i>Volkswagen</i>, <i>Benz</i>, <i>Audi</i>. And also China local brands, etc. <i>Lenovo</i>, <i>Huawei</i>.</p>
 	</div>
-	
-	<div class="features">
-		<a href="#"><img src="images/Lenovo_Icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
-	</div>
-	
-	<div class="features">
-		<a href="#"><img src="images/Lenovo_Icon.png"></a>
-		<p><b>Project Name</b><br>Platform<br><b>Role: </b>Role</p>
-	</div>
-	
-	<div class="sectionContent">
-		<p>And also China local brands, etc. <i>Lenovo</i>, <i>Huawei</i>.</p>
-	</div>
+
 	<div class="spliteLine"></div>
 </section>
 
@@ -196,6 +185,38 @@
 <section class="footer">
 	<p>© Gordon Game 2018 - <i>The Portfolio of Gordon Lee Design</i></p>
 </section>
+
+<div class="overlay" id="audiQ3Frame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="audiQ3OverlayOff()">
+		<img class="projectImage" src="images/audiQ3.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="beetlesFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="beetlesOverlayOff()">
+		<img class="projectImage" src="images/beetles.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="benzFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="benzOverlayOff()">
+		<img class="projectImage" src="images/benz.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
+
+<div class="overlay" id="lenovoFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="lenovoOverlayOff()">
+		<img class="projectImage" src="images/Lenovo.jpg">
+		<p>This is the Description</p>
+	</div>
+</div>
 
 </body>
 </html>

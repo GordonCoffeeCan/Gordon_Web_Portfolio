@@ -1,11 +1,19 @@
 // JavaScript Document
 
-function riverBandDOverlayOn(){
+function riverBandOverlayOn(){
 	document.getElementById("riverBand3DFrame").style.display = "block";
 }
 
-function riverBandDOverlayOff(){
+function riverBandOverlayOff(){
 	document.getElementById("riverBand3DFrame").style.display = "none";
+}
+
+function dungeonKitOverlayOn(){
+	document.getElementById("dungeonKit3DFrame").style.display = "block";
+}
+
+function dungeonKitOverlayOff(){
+	document.getElementById("dungeonKit3DFrame").style.display = "none";
 }
 
 function boat3DOverlayOn(){
@@ -105,6 +113,38 @@ function theHutongHunterOverlayOn(){
 
 function theHutongHunterOverlayOff(){
 	document.getElementById("theHutongHunterFrame").style.display = "none";
+}
+
+function audiQ3OverlayOn(){
+	document.getElementById("audiQ3Frame").style.display = "block";
+}
+
+function audiQ3OverlayOff(){
+	document.getElementById("audiQ3Frame").style.display = "none";
+}
+
+function beetlesOverlayOn(){
+	document.getElementById("beetlesFrame").style.display = "block";
+}
+
+function beetlesOverlayOff(){
+	document.getElementById("beetlesFrame").style.display = "none";
+}
+
+function benzOverlayOn(){
+	document.getElementById("benzFrame").style.display = "block";
+}
+
+function benzOverlayOff(){
+	document.getElementById("benzFrame").style.display = "none";
+}
+
+function lenovoOverlayOn(){
+	document.getElementById("lenovoFrame").style.display = "block";
+}
+
+function lenovoOverlayOff(){
+	document.getElementById("lenovoFrame").style.display = "none";
 }
 
 $(function(){
