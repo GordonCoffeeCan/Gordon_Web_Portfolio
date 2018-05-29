@@ -147,6 +147,14 @@ function lenovoOverlayOff(){
 	document.getElementById("lenovoFrame").style.display = "none";
 }
 
+function wechatQROverlayOn(){
+	document.getElementById("wechatQRFrame").style.display = "block";
+}
+
+function wechatQROverlayOff(){
+	document.getElementById("wechatQRFrame").style.display = "none";
+}
+
 $(function(){
 	$('.crossButton').click(function(){
 		$('#deceptaconFrame').find('iframe').attr('src', '');

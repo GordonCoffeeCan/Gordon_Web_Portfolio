@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="overlayStyle.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
+<script src="scripts/PageBehaviors.js"></script>
 <title>Gordon Lee</title>
 </head>
 
@@ -25,19 +27,20 @@
 <section id="contactInfo">
 	<div class="column" id="leftColumn">		
 		<ul>
-			<img src="images/profilePic.jpg">
-			<li>3D Artist</li>
-			<li>Game Designer</li>
+			<img src="images/ProfilePic.png">
+			<li>Game 3D Artist</li>
 			<li>Game Developer</li>
+			<li>Game Designer</li>
 		</ul>
 	</div>
 	<div class="column" id="rightColumn">
 		<ul>
-			<li><a href="mailto:gordon.lee.6170@gmail.com">gordon.lee.6170@gmail.com</a></li>
-			<li><a href="https://www.linkedin.com/in/gordonlee6170/" target="_blank">LinkedIn</a></li>
-			<li><a href="https://www.facebook.com/gordonlee6170" target="_blank">Facebook</a></li>
-			<li><a href="https://twitter.com/GordonCoffeeCan" target="_blank">@GordonCoffeeCan</a></li>
-			<li><a>Wechat</a></li>
+			<li><a href="mailto:gordon.lee.6170@gmail.com"><img src="images/Email.png">gordon.lee.6170@gmail.com</a></li>
+			<li><a href="https://www.linkedin.com/in/gordonlee6170/" target="_blank"><img src="images/LinkedIn.png">LinkedIn</a></li>
+			<li><a href="https://www.facebook.com/gordonlee6170" target="_blank"><img src="images/Facebook.png">Facebook</a></li>
+			<!--<li><a href="https://twitter.com/GordonCoffeeCan" target="_blank"><img src="images/Twitter.png">@GordonCoffeeCan</a></li>-->
+			<li><a onClick="wechatQROverlayOn()"><img src="images/Wechat.png">Wechat</a></li>
+			<li><a><img src="images/Resume.png">Resume</a></li>
 		</ul>
 	</div>
 </section>
@@ -45,6 +48,14 @@
 <section class="footer">
 	<p>© Gordon Game 2018 - <i>The Portfolio of Gordon Lee Design</i></p>
 </section>
+
+<div class="overlay" id="wechatQRFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="wechatQROverlayOff()">
+		<img class="projectImage" src="images/WechatQRCode.jpg">
+		<p>Wechat ID: Gordon715113</p>
+	</div>
+</div>
 
 </body>
 </html>
