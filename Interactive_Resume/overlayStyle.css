@@ -21,6 +21,27 @@
 	font-size: 16px;
 }
 
+.overlayLink {
+	width: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.overlayLink a{
+	color: #eee;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	background: #555;
+	padding: 2px 10px;
+	text-decoration: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.85);
+}
+
+.overlayLink a:hover{
+	color: #fff;
+	background: #888;
+}
+
 .imageFrame{
 	width: 1000px;
 	margin: 36px auto 0 auto;
