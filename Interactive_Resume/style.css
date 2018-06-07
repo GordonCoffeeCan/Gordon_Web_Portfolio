@@ -143,6 +143,34 @@
 	display: block;
 }
 
+.skills{	
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-top: 18px;
+	padding-bottom: 20px;
+	line-height:  42px;
+	color: #666;
+}
+
+.skills p {
+	padding: 48px 0 15px 0;
+	font-size: 26px;
+	font-weight: 200;
+	text-align: center;
+}
+
+.skills ul{
+	list-style: none;
+	padding-bottom: 20px;
+}
+
+.skills ul li{
+	padding: 13px 20px;
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+	text-align: center;
+}
+
 .spliteLine{
 	border-bottom: solid thin #666;
 }
