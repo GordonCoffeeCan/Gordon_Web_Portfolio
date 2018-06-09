@@ -91,6 +91,30 @@ function cellMetroOverlayOff(){
 	document.getElementById("cellMetroFrame").style.display = "none";
 }
 
+function playerConceptOverlayOn(){
+	document.getElementById("playerConceptFrame").style.display = "block";
+}
+
+function playerConceptOverlayOff(){
+	document.getElementById("playerConceptFrame").style.display = "none";
+}
+
+function engineerConceptOverlayOn(){
+	document.getElementById("engineerConceptFrame").style.display = "block";
+}
+
+function engineerConceptOverlayOff(){
+	document.getElementById("engineerConceptFrame").style.display = "none";
+}
+
+function zombieConceptOverlayOn(){
+	document.getElementById("zombieConceptFrame").style.display = "block";
+}
+
+function zombieConceptOverlayOff(){
+	document.getElementById("zombieConceptFrame").style.display = "none";
+}
+
 function alienConceptOverlayOn(){
 	document.getElementById("alienConceptFrame").style.display = "block";
 }
