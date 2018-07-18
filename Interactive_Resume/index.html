@@ -5,12 +5,15 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="overlayStyle.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
 <script src="scripts/createjs-2015.11.26.min.js"></script>
 <!--<script src="scripts/Page_2.js"></script>-->
 <script src="scripts/ScrollDown.js"></script>
 <!--<script src="scripts/Page_2_Animation.js"></script>-->
 <script src="scripts/ScrollDown_Animation.js"></script>
+<script src="scripts/jquery-3.3.1.min.js"></script>
+<script src="scripts/PageBehaviors.js"></script>
 <title>Gordon Lee</title>
 </head>
 
@@ -32,7 +35,7 @@
 	<div id="titlePage">
 		<h1 id="upperTitle">Hi I'm Gordon</h1>
 		<div class="spliteLine"></div>
-		<h1 id="lowerTitle">3D Aritst + Game Developer</h1>
+		<h1 id="lowerTitle">Game 3D Artist</h1>
 		
 	<div class="scrollDownAnim" id="animation_container_Scroll" style="background-color:rgba(255, 255, 255, 0); width:1000px; height:75px">
 		<canvas id="canvas_Scroll" width="1000" height="75" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
@@ -63,18 +66,18 @@
 	<div id="moreProjects"><a href="portfolio.html">View More</a></div>
 	
 	<div class="project">
-		<a href="https://mostopha.itch.io/rayhas-poem" target="_blank"><img src="images/RayhasPoem_Icon.png"></a>
-		<p><b>Rayha's Poem</b><br>Platformer<br><b>Platform: </b>Win &amp; Mac<br><b>Role: </b>3D Artis, Game Programmer and Designer<br><b>Year: </b>2018</p>
+		<a onClick="riverBandOverlayOn()"><img src="images/RiverBandEnv_Icon.png"></a>
+		<p><b>River Band and Bridge - in <i>Rayha's Poem</i></b><br>3D Game Art Assets<br><b>Role: </b>3D Modeler, Texture Designer<br><b>Year: </b>2018</p>
 	</div>
 	
 	<div class="project">
-		<a href="https://gordonlee.itch.io/pixel-alienoid" target="_blank"><img src="images/Pixel_Alienoid_icon.png"></a>
-		<p><b>Pixel Alienoid</b><br>Action<br><b>Platform: </b>Win, Mac &amp; Web<br><b>Role: </b>Game Designer, Game Programmer, Game Artist<br><b>Year: </b>2018</p>
+		<a onClick="boat3DOverlayOn()"><img src="images/Boat3D_Icon.png"></a>
+		<p><b>Sailboat and Island</b><br>3D Modeling<br><b>Role: </b>3D Artist<br><b>Year: </b>2018</p>
 	</div>
 	
 	<div class="project">
-		<a href="https://gordonlee.itch.io/catchgarbage" target="_blank"><img src="images/CatchGarbage_Icon.png"></a>
-		<p><b>Catch Garbage</b><br>Action<br><b>Platform: </b>Win &amp; Mac &amp; Web<br><b>Role: </b>Game Designer, Game Programmer, Game Artist<br><b>Year: </b>2017</p>
+		<a onClick="tRex3DOverlayOn()"><img src="images/T_Rex_Icon.png"></a>
+		<p><b>T-Rex</b><br>3D Modeling<br><b>Role: </b>3D Artist<br><b>Year: </b>2017</p>
 	</div>
 	
 </section>
@@ -87,6 +90,40 @@
 <section class="footer">
 	<p>© Gordon Game 2018 - <i>The Portfolio of Gordon Lee Design</i></p>
 </section>
+
+<!----------------------------------------------------------------------->
+<div class="overlay" id="riverBand3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="riverBandOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/d275c86b8a154512ab6a6317b99bf76c/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p><i>River Band and Bridge</i> is a stylized envrionment design and is also 3D game art assets that are used in <i>Rayha's Poem</i>.<br>Objects are modeled in Maya, textured in Photoshop and Sbustance Painter, and Rendered in Sketchfab.</p>
+	</div>
+</div>
+
+<div class="overlay" id="dungeonKit3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="dungeonKitOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/a5bacf9b412b47fcbf72058279f99c3e/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p><i>Dungeon Level Kit</i> is 3D assets bundle that is used for level design in <i>Rayha's Poem</i>.<br>Objects are modeled in Maya and Zbrush. The texture are painted in Substance Painter and Photoshop.</p>
+	</div>
+</div>
+
+<div class="overlay" id="boat3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="boat3DOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/975e2f56621344bfb6a2a081f3993339/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p><i>Sailboat and Island</i> is a 3D scene concept design in stylized texture. <br>The boat, island, coconut tree and pier are modeled in Maya and Zbrush, and baked Normal map for low-poly mesh. <br>Texture is painted in Substance Painter. The lightmap is baked in Unity and the scene is rendered by Sketchfab.</p>
+	</div>
+</div>
+
+<div class="overlay" id="tRex3DFrame">
+	<div class="imageFrame">
+		<img class="crossButton" src="images/CrossButton.png" onClick="tRex3DOverlayOff()">
+		<iframe class="projectImage" width="800" height="450" src="https://sketchfab.com/models/79582666e5074b21b08c00862eee12bf/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+		<p><i>T-Rex</i> is a 3D creature design. The T-Rex, rocks, wood and terrain are modeled in Zbrush, topoed in TopoGun and textured in Substance Painter. <br>All models in the scene are fully optimized and ready to use in the game engine.</p>
+	</div>
+</div>
+<!----------------------------------------------------------------------->
 
 </body>
 </html>
